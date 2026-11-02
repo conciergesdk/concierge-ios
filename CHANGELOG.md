@@ -2,8 +2,12 @@
 
 All notable changes to the Concierge iOS SDK. Versions follow semantic versioning.
 
-## Unreleased
+## 0.1.1
 
+- Card buttons are never dead. A review card whose store link is missing or does not open (no App Store app, such as the simulator) shows the system rating prompt (`AppStore.requestReview`) instead.
+- Paywall cards close the chat before calling `onPaywallCard`, so the app's paywall is not stuck behind the chat sheet. Offers that resolve to a paywall do the same.
+- With no `onPaywallCard` handler, a paywall card tap closes the chat, logs "Set Concierge.onPaywallCard to open your paywall" (also listed in the debug overlay) and emits the new `ConciergeEvent.paywallUnhandled(paywallId:)`.
+- Device requests send `X-Concierge-Handlers` (`offer`, `paywall`, `offer,paywall` or `none`) so the dashboard can show whether cards are wired.
 - `Concierge.maybeRequestReview(moment:)`: asks StoreKit for a rating only when local rules (install age, 3 per 365 days, 90 day cooldown, once per version, never over the chat) and the server (no recent complaint or negative sentiment) allow it. Returns `ReviewPromptResult` (`shown`, `reason`).
 - `Concierge.reviewPromptAfterSupport` (default true): checks `.supportResolved` about a second after the chat closes.
 - `ConciergeEvent.reviewPromptShown(moment:)`.
