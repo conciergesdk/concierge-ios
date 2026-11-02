@@ -1,0 +1,44 @@
+Concierge SDK License
+
+Copyright (c) 2026 Concierge (https://conciergesdk.com). All rights reserved.
+
+The Concierge SDK (the "SDK") is proprietary software. It is distributed only in binary, compiled
+or minified form, together with the small integration files a package needs to build. Source code
+is not provided.
+
+1. Grant. You may download, install and use the SDK, and distribute it as an unmodified part of
+   your own applications, free of charge, for the purpose of connecting those applications to a
+   Concierge account (https://conciergesdk.com). Use of the Concierge service is governed by the
+   Concierge Terms of Service and Data Processing Agreement.
+
+2. Restrictions. You may not (a) sell, sublicense or redistribute the SDK on its own, (b) modify,
+   decompile, disassemble or reverse engineer the SDK, except to the extent applicable law
+   expressly permits it despite this restriction, (c) remove or alter any proprietary notices,
+   (d) use the SDK to build a product that competes with Concierge, or (e) remove, hide or
+   obscure the AI label the SDK shows on AI written replies.
+
+3. Ownership. Concierge keeps all rights, title and interest in the SDK. No rights are granted
+   except as stated in this license.
+
+4. Data. The SDK sends the data described in the platform docs to the Concierge service. You are
+   responsible for telling your users about it in your app's privacy policy and privacy labels.
+
+5. Third party components. Open source libraries the SDK relies on are fetched by your build tool
+   under their own licenses and are not covered by this license.
+
+6. Termination. This license ends automatically if you breach it or no longer have a Concierge
+   account. On termination you must stop distributing new builds of your applications that
+   contain the SDK.
+
+7. No warranty. THE SDK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT.
+
+8. Limitation of liability. IN NO EVENT SHALL CONCIERGE BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY ARISING FROM OR IN CONNECTION WITH THE SDK OR ITS USE, EXCEPT WHERE SUCH LIABILITY
+   CANNOT BE LIMITED BY LAW.
+
+9. Export. You will not export or use the SDK in breach of export control or sanctions laws.
+
+Full terms, including the licensor's legal name and governing law:
+https://conciergesdk.com/legal/sdk-license
