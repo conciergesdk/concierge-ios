@@ -2,6 +2,11 @@
 
 All notable changes to the Concierge iOS SDK. Versions follow semantic versioning.
 
+## 0.1.3
+
+- Security: attachment images load only from the API's own origin (the same scheme, host and port as the base URL). `file:`, `data:`, other hosts and downgrades to plain http are no longer loaded.
+- Security: message text no longer turns `http://` URLs into links (a bare domain such as `example.com/help` links as https). Tapping a web link in a message now asks first and shows the link's host, so a reply cannot silently open your app's Universal Links or a look-alike page. `mailto:` and `tel:` links open as before. The alert is localized in all 34 languages.
+
 ## 0.1.2
 
 - Fix: an offer card that resolves to a paywall closes the chat before it reaches `onOfferCard`, so a paywall the app opens from that handler is no longer presented under the chat sheet. The default handling (no `onOfferCard`) now also closes an embedded chat (`closeChat`) before calling `onPaywallCard`. Store offers keep the chat open: the purchase sheet shows over it.
