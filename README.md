@@ -14,7 +14,7 @@ Swift Package Manager. In Xcode: File > Add Package Dependencies, enter
 In `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/conciergesdk/concierge-ios.git", from: "0.1.1")
+.package(url: "https://github.com/conciergesdk/concierge-ios.git", from: "0.1.2")
 // target dependency
 .product(name: "Concierge", package: "concierge-ios")
 ```

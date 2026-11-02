@@ -2,6 +2,11 @@
 
 All notable changes to the Concierge iOS SDK. Versions follow semantic versioning.
 
+## 0.1.2
+
+- Fix: an offer card that resolves to a paywall closes the chat before it reaches `onOfferCard`, so a paywall the app opens from that handler is no longer presented under the chat sheet. The default handling (no `onOfferCard`) now also closes an embedded chat (`closeChat`) before calling `onPaywallCard`. Store offers keep the chat open: the purchase sheet shows over it.
+- Docs: the `onOfferCard` samples close the chat with `Concierge.dismiss()` and show an error when a purchase fails, instead of leaving the customer in the chat with nothing shown.
+
 ## 0.1.1
 
 - Card buttons are never dead. A review card whose store link is missing or does not open (no App Store app, such as the simulator) shows the system rating prompt (`AppStore.requestReview`) instead.
